@@ -1,0 +1,39 @@
+* {
+   box-sizing: border-box;
+   text-decoration: none;
+   color: black;
+}
+
+.wrapper {
+   background-color: lightgreen;
+   padding: 5px;
+}
+
+.block {
+   background-color: white;
+   border: thin solid green;
+   overflow: hidden;
+
+   padding: 5px;
+   margin: 5px;
+
+   width: 100%;
+
+   vertical-align: top;
+}
+
+
+.row {
+   width: calc(50% - 12px);
+   display: inline-block;
+}
+
+
+.main__left {
+   width: calc(33% - 20px); 
+   display: inline-block;
+}
+.main__right {
+   display: inline-block;
+   width: calc(66%);
+}

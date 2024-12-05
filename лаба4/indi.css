@@ -1,0 +1,47 @@
+h3 {
+   text-align: center;
+}
+
+p {
+   display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1vw;
+    width: 50%;
+    margin: 0 auto;
+}
+p > a {
+   background-color: lightgray;
+   width: 100%;
+   padding: 2px 0;
+   text-align: center;
+   text-decoration: none;
+   color: black
+}
+
+.content {
+   margin: 10px 0;
+   background-color: lightgreen;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 5px;
+   justify-content: space-around;
+}
+
+.content > .topic {
+   display: grid;
+   background-color: white;
+   margin: 10px;
+   padding: 5px;
+}
+
+@media (max-width: 540px) {
+   p {
+      width: 100%;
+      grid-gap: 3vw;
+   }
+   .content {
+
+      grid-template-columns: 1fr;
+
+   }
+}
