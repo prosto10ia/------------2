@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Задание</title>
+   
+   <style> 
+      * {
+         margin: 0;
+         padding: 0;
+      }
+      
+
+      .wrapper {
+         display: flex;
+         flex-direction: column;
+         min-height: 100vh;
+         width: 90%;
+         margin: 0 auto;
+      }
+      
+      .header {
+         background: #ccc;
+         padding: 10px 40px 10px 10px;
+
+      }
+         
+      .search {
+         background: gray;
+         text-align: center;
+         width: 100%;
+         height: 40px;
+         margin: 0 0 5px 0;
+         display: flex;
+         align-items: center;
+      }
+
+      .search__input {
+         background: white;
+         width: 60%;
+         height: 20px;
+         margin: 0 auto;
+      }
+      
+      .menu {
+         display: flex;
+         justify-content: end;
+         gap: 10px;
+      }
+      
+      .menu__item {
+         width: 80px;
+         
+         text-decoration: none;
+         padding: 5px 10px;
+         background: lightgray;
+         color: black
+      }
+      
+      .menu__item--active {
+         color: yellow;
+         background: #999;
+      }
+      
+      .main {
+         flex: 1;
+      }
+      
+      .gallery {
+         display: flex;
+         gap: 1px;
+         padding: 1px;
+      }
+      
+      .gallery__item {
+         flex: 1;
+         background: lightblue;
+         text-align: center;
+         padding: 20px;
+         height: 100px;
+      }
+
+      .gallery__item:first-child {
+         background-color: #d29be89e;
+      }
+      .gallery__item:nth-child(2n) {
+         margin: 5px 0 0 0;
+         width: 100px;
+         background: rgb(173, 230, 212);
+
+      }
+      
+      .content {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         padding: 10px;
+         margin: 0 0 30px 0;
+      }
+      
+      .content__item {
+         
+      }
+
+      .item {
+         display: flex;
+         gap: 10px;
+         padding: 10px;
+         border: thin solid grey;
+      }
+
+      .item:last-child {
+         flex-direction: row-reverse;
+      }
+
+      .item__block-text {
+         width: 100%;
+      }
+      
+      .text{
+
+      }
+      
+      .text__title {
+         text-align: center;
+         font-weight: normal;
+         font-size: 1em;
+      }
+
+      .text__text hr {
+         margin: 10px 0;
+         color: grey;
+      }
+      
+      .item__image {
+         width: 200px;
+         height: 50px;
+         padding: 10px;
+      }
+      .item:first-child > .item__image {
+         background: rgba(212, 167, 234, 0.604);
+      }
+      .item:last-child > .item__image  {
+         background: #1114cf5a;
+      }
+
+      .footer {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         background: #999;
+         padding: 10px;
+      }
+      
+      .footer__contacts {
+         text-align: right;
+      }
+      
+      
+   </style>
+   
+</head>
+<body>
+   <div class="search">
+      <div class="search__input"></div>
+  </div>
+
+   <div class="wrapper">
+
+      <header class="header">
+        <nav class="header__menu menu">
+          <a class="menu__item menu__item--active" href="#">Меню_1</a>
+          <a class="menu__item" href="#">Меню_2</a>
+          <a class="menu__item" href="#">Меню_3</a>
+        </nav>
+      </header>
+    
+      <main class="main">
+        <section class="gallery">
+          <div class="gallery__item gallery__item--large">Рисунок</div>
+          <div class="gallery__item">Рисунок</div>
+          <div class="gallery__item">Рисунок</div>
+          <div class="gallery__item">Рисунок</div>
+        </section>
+    
+        <section class="content">
+          <div class="content__item item">
+            <div class="item__block-text text">
+               <h2 class="text__title">Заголовок</h2>
+               <div class="text__text">
+                  <hr>
+                  <hr>
+                  <hr>
+                  <hr>
+               </div>
+            </div>
+            <div class="item__image">Рисунок</div>
+          </div>
+          <div class="content__item item">
+            <div class="item__block-text text">
+               <h2 class="text__title">Заголовок</h2>
+               <div class="text__text">
+                  <hr>
+                  <hr>
+                  <hr>
+                  <hr>
+               </div>
+            </div>
+          </div>
+          <div class="content__item item">
+            <div class="item__block-text text">
+               <h2 class="text__title">Заголовок</h2>
+               <div class="text__text">
+                  <hr>
+                  <hr>
+                  <hr>
+                  <hr>
+               </div>
+            </div>
+            <div class="item__image">Рисунок</div>
+          </div>
+        </section>
+      </main>
+    
+   </div>
+   <footer class="footer">
+     <div class="footer__copyright">© Данюк К.К., Б9122-09.03.04, 2024-2025</div>
+     <div class="footer__contacts">Контакты</div>
+   </footer>
+    
+</body>
+</html>

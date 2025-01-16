@@ -1,0 +1,67 @@
+1==============
+
+size = 1%
+
+section
+  box-shadow size size 2*size rgba(0, 0, 0, size/2)
+  padding 2*size
+  margin 4*size
+
+
+2================
+
+.block
+  display flex
+  flex-wrap wrap
+
+  p
+    display inline-block
+    background grey
+
+    &:hover
+      color green
+
+  &:hover
+    color red
+
+
+3==================
+
+.block {
+  color: blue;
+}
+
+.block .menu {
+  color: navy;
+}
+
+.block a {
+  color: red;
+}
+
+.block h1 {
+  color: green;
+}
+
+.block:nth-child(2):hover {
+  color: white;
+}
+
+
+
+4===================
+
+
+style-tag(tag, color)
+  {tag}
+    color color
+
+
+
+5==================
+
+
+color-inv(r, g, b)
+  color rgb(255 - r, 255 - g, 255 - b)
+
+  
