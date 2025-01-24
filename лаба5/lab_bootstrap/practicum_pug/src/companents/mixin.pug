@@ -1,0 +1,37 @@
+mixin createMenu(menu, active)
+  each value, key in menu
+    if active == key
+      a.active(href= value)= key
+    else
+      a(href= value)= key
+  a(href= "project.html")= "Личный проект"
+
+
+mixin createSelection(listSections)
+   each item in listSections
+      section
+         h3= item.header 
+         img(src= require("./images/" + item.image))
+         p= item.text
+            a(href="#") &hellip;
+
+mixin createMenuBuild(menu, active)
+  each value, key in menu
+    if "Главная" == key
+      a(href= value)= key
+      a.active(href= value)= structures[0].menuItem
+    else
+      a(href= value)= key
+  
+
+
+// Задание  
+mixin createMenuIndi(menu, active)
+   nav.menu 
+      ul.list
+            each value, key in menu
+               li
+                  if key == active
+                     a.active(href= "#")= value
+                  else
+                     a(href= "#")= value

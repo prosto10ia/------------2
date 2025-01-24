@@ -1,0 +1,20 @@
+include companents/mixin.pug
+include companents/data.pug
+doctype html
+
+- var id = 1
+
+html(lang="ru")
+  head
+    title #{title}
+  body
+    block header
+      h2= title
+ 
+    block nav
+
+    block content
+
+    block footer
+      footer
+        h4 &copy;
